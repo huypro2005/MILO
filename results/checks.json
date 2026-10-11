@@ -1,0 +1,50 @@
+{
+ "status": "FAIL",
+ "items": [
+  {
+   "level": "PASS",
+   "id": "H1_SGMM_NONE:RHO_EQ1",
+   "msg": "ρ=1.084, KTC95%=[0.968, 1.199], z(ρ=1)=1.42"
+  },
+  {
+   "level": "WARN",
+   "id": "LAG_GE1",
+   "msg": "23 SGMM có L1.lnCO2 ≥ 1 (khoảng 1.072–1.084)"
+  },
+  {
+   "level": "FAIL",
+   "id": "JACKKNIFE",
+   "msg": "23 mô hình FEDYNDK có ρ_jk ≥ 1 (khoảng 1.027–1.040), KTC chứa 1 — chờ tác giả xác nhận D25"
+  },
+  {
+   "level": "WARN",
+   "id": "LONGRUN_UNCORR",
+   "msg": "23 mô hình có longrun_uncorrected với ρ_jk ≥ 1 — KHÔNG dùng trong báo cáo"
+  },
+  {
+   "level": "WARN",
+   "id": "BOND_BOUND",
+   "msg": "SGMM L1=1.084 nằm ngoài [FE 0.851, POLS 0.984]"
+  },
+  {
+   "level": "WARN",
+   "id": "sgmm_sensitivity_H1:HANSEN_HIGH",
+   "msg": "'gmm(y,2:4); FDI+kiem soat noi sinh gmm(2:3)' Hansen p=0.903 > 0.9"
+  },
+  {
+   "level": "WARN",
+   "id": "sgmm_sensitivity_H1:HANSEN_HIGH",
+   "msg": "'gmm(y,3:5); FDI+kiem soat gmm(3:4)' Hansen p=0.958 > 0.9"
+  },
+  {
+   "level": "WARN",
+   "id": "sgmm_sensitivity_H1:DGMM_GT_POLS",
+   "msg": "'Difference GMM (nolevel), X exog-iv' ρ=1.244 > POLS động 0.984"
+  },
+  {
+   "level": "WARN",
+   "id": "sgmm_sensitivity_H1:DGMM_GT_POLS",
+   "msg": "'Difference GMM (nolevel), X noi sinh gmm(2:3)' ρ=1.084 > POLS động 0.984"
+  }
+ ]
+}
